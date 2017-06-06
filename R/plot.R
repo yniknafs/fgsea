@@ -57,8 +57,6 @@ plotGseaTable <- function(pathways, stats, fgseaRes,
                       axis.ticks=element_blank(),
                       panel.grid = element_blank(),
                       axis.title=element_blank(),
-                      axis.line = element_blank(),
-                      panel.margin = element_blank(),
                       plot.margin = rep(unit(0,"null"),4),
                       panel.margin = rep(unit(0,"null"),4)
                 ),
@@ -83,8 +81,6 @@ plotGseaTable <- function(pathways, stats, fgseaRes,
               axis.ticks.y=element_blank(),
               panel.grid = element_blank(),
               axis.title=element_blank(),
-              axis.line = element_blank(),
-              panel.margin = element_blank(),
               plot.margin = unit(c(0,0,0.5,0), "npc"),
               panel.margin = unit(c(0,0,0,0), "npc")
         )
@@ -156,4 +152,3 @@ plotEnrichment <- function(pathway, stats,
         labs(x="rank", y="enrichment score")
     g
 }
-
